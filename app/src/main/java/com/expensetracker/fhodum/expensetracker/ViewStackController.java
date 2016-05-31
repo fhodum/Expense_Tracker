@@ -9,5 +9,4 @@ public interface ViewStackController {
 
     void pushShowSummaryOnStack();
 
-    void pushShowPersonOnStack();
 }

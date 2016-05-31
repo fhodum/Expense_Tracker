@@ -33,6 +33,7 @@ public class MainActivityController extends ControllerBase implements ViewStackC
 
     Queue<String> views = new LinkedList<>();
 
+
     public MainActivityController(Activity activity){
         super(activity);
 
@@ -130,8 +131,8 @@ public class MainActivityController extends ControllerBase implements ViewStackC
         String view =views.remove();
         if (view.equals("Summary")) {
             showSummary();
-        }else if(view.equals("Person")){
-            //showPerson();
+        }else {
+            Log.d(MainActivityController.class.getCanonicalName(),"Error popped and wrong thing was on stack");
         }
         return false;
     }
@@ -142,8 +143,4 @@ public class MainActivityController extends ControllerBase implements ViewStackC
 
     }
 
-    @Override
-    public void pushShowPersonOnStack() {
-        views.add("Summary");
-    }
 }
