@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Summary View" android:id="@+id/summary_item">
+        <menu>
+            <item
+                android:id="@+id/show_summary"
+                android:icon="@drawable/ic_assessment_black_24dp"
+                android:title="Show Summary" />
+        </menu>
+    </item>
+    <group android:id="@+id/people_menu_group" android:checkableBehavior="single">
+        <item android:title="Expense Category" android:id="@+id/people_group_item">
+            <menu android:id="@+id/people_menu">
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/summary_menu_group">
+        <item android:title="Administer" android:id="@+id/people_control_item">
+            <menu>
+                <item
+                    android:id="@+id/add_new_person"
+                    android:icon="@drawable/ic_add_circle_black_24dp"
+                    android:title="Add New Category" />
+                <item
+                    android:id="@+id/export_all"
+                    android:icon="@drawable/ic_import_export_black_24dp"
+                    android:title="Export All Data" />
+
+                <item
+                    android:id="@+id/delete_all"
+                    android:icon="@drawable/ic_delete_forever_black_24dp"
+                    android:title="Delete All Data (Forever)" />
+
+            </menu>
+        </item>
+    </group>
+
+</menu>
